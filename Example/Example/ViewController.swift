@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import ModuleOne
+
+extension CustomView: NibFileCompanion {
+    class var bundle: Bundle { return ModuleOne.ModuleBundle.bundle }
+}
 
 class ViewController: UIViewController {
 
@@ -16,6 +21,9 @@ class ViewController: UIViewController {
     }
     
     private func nibInstantiable() {
+        print(ModuleOne.ModuleBundle.bundle.bundleIdentifier)
+        print(Bundle.module.bundleIdentifier)
+        
         if let view1 = CustomView.fromNib() {
             view1.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
             view.addSubview(view1)
@@ -28,8 +36,11 @@ class ViewController: UIViewController {
         
         if let view3 = CustomView.withOwner(UIView.self, index: 2) {
             view3.frame = CGRect(x: 50, y: 350, width: 100, height: 100)
+            view3.backgroundColor = UIColor.magentaHex
             view.addSubview(view3)
         }
     }
 }
+
+
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF33388922712CB40054AA62 /* ModuleOne.h in Headers */ = {isa = PBXBuildFile; fileRef = EF33388722712CB40054AA62 /* ModuleOne.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF33388C22712CB40054AA62 /* ModuleOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF33388522712CB40054AA62 /* ModuleOne.framework */; };
+		EF33388D22712CB40054AA62 /* ModuleOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF33388522712CB40054AA62 /* ModuleOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF33389422712CF00054AA62 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB3A227073AE001E6A72 /* CustomView.swift */; };
+		EF33389522712E400054AA62 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF68FB3C227073D2001E6A72 /* CustomView.xib */; };
+		EF33389E2271447B0054AA62 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF33389D2271447B0054AA62 /* UIColor+Hex.swift */; };
 		EF68FB212270728C001E6A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB202270728C001E6A72 /* AppDelegate.swift */; };
 		EF68FB232270728C001E6A72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB222270728C001E6A72 /* ViewController.swift */; };
 		EF68FB262270728C001E6A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF68FB242270728C001E6A72 /* Main.storyboard */; };
@@ -14,12 +20,38 @@
 		EF68FB2B22707293001E6A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF68FB2922707293001E6A72 /* LaunchScreen.storyboard */; };
 		EF68FB3822707336001E6A72 /* NibFileCompanion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB3622707336001E6A72 /* NibFileCompanion.swift */; };
 		EF68FB3922707336001E6A72 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EF68FB3722707336001E6A72 /* README.md */; };
-		EF68FB3B227073AE001E6A72 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB3A227073AE001E6A72 /* CustomView.swift */; };
-		EF68FB3D227073D2001E6A72 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF68FB3C227073D2001E6A72 /* CustomView.xib */; };
 		EF68FB422270A4C1001E6A72 /* ModuleBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68FB412270A4C1001E6A72 /* ModuleBundle.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EF33388A22712CB40054AA62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF68FB152270728C001E6A72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF33388422712CB40054AA62;
+			remoteInfo = ModuleOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF33389122712CB40054AA62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF33388D22712CB40054AA62 /* ModuleOne.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EF33388522712CB40054AA62 /* ModuleOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF33388722712CB40054AA62 /* ModuleOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleOne.h; sourceTree = "<group>"; };
+		EF33388822712CB40054AA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF33389D2271447B0054AA62 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "../../../../HexToColor/UIColor+Hex.swift"; sourceTree = "<group>"; };
 		EF68FB1D2270728C001E6A72 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF68FB202270728C001E6A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF68FB222270728C001E6A72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,26 +61,54 @@
 		EF68FB2C22707293001E6A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF68FB3622707336001E6A72 /* NibFileCompanion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibFileCompanion.swift; sourceTree = "<group>"; };
 		EF68FB3722707336001E6A72 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EF68FB3A227073AE001E6A72 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = Example/CustomView.swift; sourceTree = "<group>"; };
-		EF68FB3C227073D2001E6A72 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomView.xib; path = Example/CustomView.xib; sourceTree = "<group>"; };
+		EF68FB3A227073AE001E6A72 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		EF68FB3C227073D2001E6A72 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		EF68FB412270A4C1001E6A72 /* ModuleBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModuleBundle.swift; path = ../../../../ModuleBundle/ModuleBundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF68FB1A2270728C001E6A72 /* Frameworks */ = {
+		EF33388222712CB40054AA62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF68FB1A2270728C001E6A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF33388C22712CB40054AA62 /* ModuleOne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF33388622712CB40054AA62 /* ModuleOne */ = {
+			isa = PBXGroup;
+			children = (
+				EF33388722712CB40054AA62 /* ModuleOne.h */,
+				EF68FB3A227073AE001E6A72 /* CustomView.swift */,
+				EF68FB3C227073D2001E6A72 /* CustomView.xib */,
+				EF33388822712CB40054AA62 /* Info.plist */,
+			);
+			path = ModuleOne;
+			sourceTree = "<group>";
+		};
+		EF3338962271304D0054AA62 /* HexToColor */ = {
+			isa = PBXGroup;
+			children = (
+				EF33389D2271447B0054AA62 /* UIColor+Hex.swift */,
+			);
+			path = HexToColor;
+			sourceTree = "<group>";
+		};
 		EF68FB142270728C001E6A72 = {
 			isa = PBXGroup;
 			children = (
 				EF68FB1F2270728C001E6A72 /* Example */,
+				EF33388622712CB40054AA62 /* ModuleOne */,
 				EF68FB1E2270728C001E6A72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				EF68FB1D2270728C001E6A72 /* Example.app */,
+				EF33388522712CB40054AA62 /* ModuleOne.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +139,7 @@
 		EF68FB32227072A3001E6A72 /* CocoaCommonHelper */ = {
 			isa = PBXGroup;
 			children = (
+				EF3338962271304D0054AA62 /* HexToColor */,
 				EF68FB3E2270A477001E6A72 /* ModuleBundle */,
 				EF68FB3522707336001E6A72 /* NibFileCompanion */,
 			);
@@ -89,8 +151,6 @@
 			children = (
 				EF68FB3622707336001E6A72 /* NibFileCompanion.swift */,
 				EF68FB3722707336001E6A72 /* README.md */,
-				EF68FB3A227073AE001E6A72 /* CustomView.swift */,
-				EF68FB3C227073D2001E6A72 /* CustomView.xib */,
 			);
 			name = NibFileCompanion;
 			path = ../../../NibFileCompanion;
@@ -106,7 +166,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EF33388022712CB40054AA62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF33388922712CB40054AA62 /* ModuleOne.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		EF33388422712CB40054AA62 /* ModuleOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF33389022712CB40054AA62 /* Build configuration list for PBXNativeTarget "ModuleOne" */;
+			buildPhases = (
+				EF33388022712CB40054AA62 /* Headers */,
+				EF33388122712CB40054AA62 /* Sources */,
+				EF33388222712CB40054AA62 /* Frameworks */,
+				EF33388322712CB40054AA62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModuleOne;
+			productName = ModuleOne;
+			productReference = EF33388522712CB40054AA62 /* ModuleOne.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EF68FB1C2270728C001E6A72 /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF68FB2F22707293001E6A72 /* Build configuration list for PBXNativeTarget "Example" */;
@@ -114,10 +203,12 @@
 				EF68FB192270728C001E6A72 /* Sources */,
 				EF68FB1A2270728C001E6A72 /* Frameworks */,
 				EF68FB1B2270728C001E6A72 /* Resources */,
+				EF33389122712CB40054AA62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF33388B22712CB40054AA62 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -134,6 +225,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = pondokios;
 				TargetAttributes = {
+					EF33388422712CB40054AA62 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					EF68FB1C2270728C001E6A72 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -153,17 +247,25 @@
 			projectRoot = "";
 			targets = (
 				EF68FB1C2270728C001E6A72 /* Example */,
+				EF33388422712CB40054AA62 /* ModuleOne */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF33388322712CB40054AA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF33389522712E400054AA62 /* CustomView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF68FB1B2270728C001E6A72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EF68FB2B22707293001E6A72 /* LaunchScreen.storyboard in Resources */,
-				EF68FB3D227073D2001E6A72 /* CustomView.xib in Resources */,
 				EF68FB2822707293001E6A72 /* Assets.xcassets in Resources */,
 				EF68FB3922707336001E6A72 /* README.md in Resources */,
 				EF68FB262270728C001E6A72 /* Main.storyboard in Resources */,
@@ -173,19 +275,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF33388122712CB40054AA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF33389422712CF00054AA62 /* CustomView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF68FB192270728C001E6A72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EF68FB232270728C001E6A72 /* ViewController.swift in Sources */,
-				EF68FB3B227073AE001E6A72 /* CustomView.swift in Sources */,
 				EF68FB3822707336001E6A72 /* NibFileCompanion.swift in Sources */,
 				EF68FB422270A4C1001E6A72 /* ModuleBundle.swift in Sources */,
 				EF68FB212270728C001E6A72 /* AppDelegate.swift in Sources */,
+				EF33389E2271447B0054AA62 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF33388B22712CB40054AA62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF33388422712CB40054AA62 /* ModuleOne */;
+			targetProxy = EF33388A22712CB40054AA62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF68FB242270728C001E6A72 /* Main.storyboard */ = {
@@ -207,6 +325,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EF33388E22712CB40054AA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ModuleOne/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokit.ModuleOne;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF33388F22712CB40054AA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ModuleOne/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokit.ModuleOne;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EF68FB2D22707293001E6A72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +498,7 @@
 		EF68FB3022707293001E6A72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -343,6 +516,7 @@
 		EF68FB3122707293001E6A72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -360,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF33389022712CB40054AA62 /* Build configuration list for PBXNativeTarget "ModuleOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF33388E22712CB40054AA62 /* Debug */,
+				EF33388F22712CB40054AA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EF68FB182270728C001E6A72 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

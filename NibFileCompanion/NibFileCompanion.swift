@@ -1,12 +1,16 @@
 import UIKit
 
-protocol NibFileCompanion {}
+/// Conformed to type which name represent Nib file.
+/// e.g CustomView.xib => class CustomView
+protocol NibFileCompanion {
+    static var bundle: Bundle { get }
+}
+
 extension NibFileCompanion {
     @inlinable
     init?(index: Int,
-          options: [UINib.OptionsKey: Any]? = nil,
-          bundle: Bundle = .main) {
-        let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)
+          options: [UINib.OptionsKey: Any]? = nil) {
+        let nib = UINib(nibName: String(describing: Self.self), bundle: Self.bundle)
         let items = nib.instantiate(withOwner: Self.self, options: options)
         #if DEBUG
         if index >= items.count { fatalError("items.count \(items.count)") }
@@ -20,21 +24,17 @@ extension NibFileCompanion {
     }
     
     @inlinable
-    init?(nibInBundle bundle: Bundle) {
-        self.init(index: 0, bundle: bundle)
+    public static func fromNib() -> Self? {
+        return Self.init(index: 0)
     }
     
-    public static func fromNib(bundle: Bundle = .main) -> Self? {
-        return Self.init(nibInBundle: bundle)
-    }
-    
+    @inlinable
     public static func withOwner<T>(
         _ owner: T.Type,
         index: Int = 0,
-        options: [UINib.OptionsKey: Any]? = nil,
-        bundle: Bundle = .main
+        options: [UINib.OptionsKey: Any]? = nil
         ) -> T? {
-        let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)
+        let nib = UINib(nibName: String(describing: Self.self), bundle: Self.bundle)
         let items = nib.instantiate(withOwner: owner, options: options)
         #if DEBUG
         if index >= items.count { fatalError("items.count \(items.count)") }
